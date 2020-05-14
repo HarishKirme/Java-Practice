@@ -1,6 +1,7 @@
 package listExamples;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -52,6 +53,67 @@ public class linkedList {
 		
 		print(l_List);
 		
+		
+		List<Integer> l_List2 = new LinkedList<>();
+		System.out.println("Elements in 2nd List");
+		l_List2.addAll(l_List);
+		print(l_List2);
+		
+		
+		
+		//remove all the elements from a linked list
+
+		l_List2.clear();
+		
+		//shuffle the elements in a linked list.
+		System.out.println("Elements shuffled in List");
+	
+		//Collections.shuffle(l_List);
+		print(l_List);
+		
+		// join two linked lists
+		System.out.println("Add elements in Elements in List");
+
+		l_List2.addAll(l_List);
+		print(l_List2);
+
+		
+		// remove and return the first element of a linked list
+		
+		int value = l_List.remove(0);
+		
+		System.out.println("Value removed"+value);
+		
+		print(l_List);
+		
+		//retrieve but does not remove, the last element of a linked list.
+		
+		int lastElement = l_List.get(l_List.size()-1);
+		
+		System.out.println("last Element "+lastElement);
+
+		//check if a particular element exists in a linked list.
+		
+		boolean b = l_List.contains(20);
+		
+		System.out.println("contains::"+b);
+
+		//convert a linked list to array list.
+		
+		Integer[] cpyArr = new Integer[l_List.size()];
+		
+		cpyArr = l_List.toArray(cpyArr);
+		
+		
+		
+		//	test an linked list is empty or not.
+		
+		boolean val = l_List.isEmpty();
+		System.out.println("l_List.isEmpty()"+val);
+		
+		//replace an element in a linked list
+		l_List.set(4, 55);
+		print(l_List);
 	}
 	
 	

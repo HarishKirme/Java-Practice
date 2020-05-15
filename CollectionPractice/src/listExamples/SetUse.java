@@ -21,6 +21,8 @@ public class SetUse {
 		print(hashSet);
 	
 		
+		
+		
 		// get the number of elements in a hash set.
 		System.out.println("size:::"+hashSet.size());
 		

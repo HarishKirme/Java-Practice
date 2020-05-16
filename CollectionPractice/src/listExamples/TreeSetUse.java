@@ -125,8 +125,6 @@ public class TreeSetUse {
 	}	
 	
 	
-	
-	
 
 	public static void main(String[] args) {
 		
